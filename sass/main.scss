@@ -1,0 +1,52 @@
+@import 'config';
+@import 'nav';
+@import 'landing';
+@import 'gallery';
+@import 'article';
+@import 'card';
+@import 'footer';
+
+
+.hero-section{
+    position: static;
+    background: url("../images/technology-intricate-circuit-board-complex-green-blue-abstract-generated-by-ai\ 1.png") center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 500px;
+    @media screen and (min-width: 768px) {
+        .navigation{
+            background-color: transparent;
+            color: white;
+        }
+        .nav-links{
+            color: white;
+        }
+    }
+    .hero-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+    .hero-header {
+        max-width: 30ch;
+        margin-inline: auto;
+        span{
+        font-size: clamp(24px, 2vw + 1rem, 42px);
+display: block;
+        }
+    }
+.hero-description{
+    text-align: center;
+    font-size: clamp(14px, 1vw + 1rem, 20px);
+
+}
+}
+
+.icon-container{
+    aspect-ratio: 1;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #999;
+}

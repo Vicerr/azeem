@@ -1,0 +1,39 @@
+:root {
+    --bg-clr: #F9F9F9F9;
+    --font-clr: #4f4f4f;
+    --primary-clr: #3C4862;
+
+
+}
+
+$bg-clr: var(--bg-clr);
+$font-clr: var(--font-clr);
+
+$primary-clr: var(--primary-clr);
+
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    color: $font-clr;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: $bg-clr;
+    position: relative;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.container {
+    width: min(90%, 1200px);
+    margin-inline: auto;
+}

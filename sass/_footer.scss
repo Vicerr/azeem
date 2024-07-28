@@ -1,0 +1,32 @@
+footer{
+    background-color: $primary-clr;
+}
+footer >.wrapper{
+    color: white;
+    display: flex;
+    padding-block: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+>*{
+    @media screen and (min-width: 468px) {
+        width: fit-content;
+        text-align: left;
+        
+    }
+    text-align: center;
+    width: 100%;
+}
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .footer-link{
+        text-decoration: none;
+        display: inline-block;
+        color: inherit;
+
+    }
+}

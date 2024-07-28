@@ -1,0 +1,37 @@
+.hero-section.article {
+    margin-bottom: 4rem;
+    .hero-header {
+        font-size: 32px;
+    }
+}
+
+.flex-section {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    margin-block: 2rem;
+
+    .img-container {
+        flex: 1;
+        aspect-ratio: 4/3;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .description {
+        flex: 1;
+        display: grid;
+        gap: 4px;
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .text {
+        margin-top: 1em;
+    }
+}
