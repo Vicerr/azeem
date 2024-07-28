@@ -22,16 +22,30 @@
     }
 
     &-header {
-        color: $primary-clr;
-        font-size: 48px;
-        max-width: 18ch;
+        font-size: 32px;
+        max-width: 30ch;
         margin-inline: auto;
+
+        span {
+            font-size: 42px;
+            font-weight: 600;
+            display: block;
+        }
     }
 
     &-img-wrapper {
         // background: url("/images/Group\ 2.png");
         background-size: cover;
         min-height: 300px;
+    }
+}
+
+header {
+    background: linear-gradient(hsla(0, 0%, 0%, 0.534), hsla(0, 0%, 0%, 0.548));
+    color: #f1f1f1;
+
+    @media screen and (min-width: 768px) {
+        min-height: 100dvh;
     }
 }
 
@@ -84,6 +98,7 @@ section.about {
 .services {
 
     h2 {
+        font-weight: 500;
         text-align: center;
     }
 
@@ -99,7 +114,7 @@ section.about {
             padding: 0;
         }
 
-        border: 1px solid $primary-clr;
+        background-color: white;
         border-radius: 4px;
         display: flex;
         flex-direction: column;
@@ -108,6 +123,15 @@ section.about {
 
         p {
             font-size: 14px;
+        }
+
+        .icon-container {
+            display: grid;
+            place-content: center;
+            background-color: #999;
+            width: 40px;
+            aspect-ratio: 1;
+            border-radius: 50%;
         }
     }
 
