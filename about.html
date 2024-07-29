@@ -10,14 +10,30 @@
 </head>
 
 <body>
-  <nav></nav>
-  <header class="hero-section article">
-    <div class="hero-text container">
-      <p class="hero-header"> About Us</p>
-      <p class="hero-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi consectetur, ratione distinctio nobis nulla culpa rerum reprehenderit sunt atque odit doloremque expedita voluptates vitae enim, eius totam officia perferendis beatae sint itaque ea autem veritatis voluptate optio? Hic, dolorem cumque!</p>
+  <nav class="navigation">
+    <div class="container">
+      <div class="logo-container">
+        <p>ECE Department</p>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/" class="link">Home</a></li>
+        <li><a href="articles.html" class="link">Blog</a></li>
+        <li><a href="staff.html" class="link">Staff</a></li>
+        <li><a href="library.html" class="link">Library</a></li>
+        <li><a href="contact.html" class="link">Contact</a></li>
+      </ul>
+      <button class="menu" onclick="toggleNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
     </div>
+  </nav>
+  <div class="hero-text container">
+    <p class="hero-header"> About Us</p>
+    <p class="hero-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
+  </div>
 
-  </header>
   <main class="about">
     <section class="flex-section container">
 
@@ -79,6 +95,32 @@
     </section>
 
   </main>
+    <footer>
+      <div class="wrapper container">
+        <div class="logo-section">
+          <li><a href="" class="footer-link img"><img src="images/logo.png" alt=""></li>
+          <ul class="logo">
+
+            <div class="footer-logo">
+              <li><a href="" class="footer-link"><small>ECE department 2024. All rights Reserved </small></a></li>
+              <li class="footer-icons"><img src="images/skill-icons_instagram.png" alt=""> <img src="images/Vector.png" alt=""></li>
+            </div>
+          </ul>
+        </div>
+        <ul class="quick-links">
+          <li><a href="" class="footer-link">Home</a></li>
+          <li><a href="" class="footer-link">Gallery</a></li>
+          <li><a href="" class="footer-link">News</a></li>
+          <li><a href="" class="footer-link">About Us</a></li>
+        </ul>
+        <ul class="contacts">
+          <li>Contact Us</li>
+          <li><a href="" class="footer-link">557-888-204</a></li>
+          <li><a href="" class="footer-link">artistic@gmail.com</a></li>
+          <li><a href="" class="footer-link">www.artistic.com</a></li>
+        </ul>
+      </div>
+    </footer>
 </body>
 
 </html>

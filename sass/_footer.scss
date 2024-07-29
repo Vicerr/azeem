@@ -1,7 +1,8 @@
-footer{
+footer {
     background-color: $primary-clr;
 }
-footer >.wrapper{
+
+footer>.wrapper {
     color: white;
     display: flex;
     padding-block: 2rem;
@@ -9,24 +10,57 @@ footer >.wrapper{
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
->*{
-    @media screen and (min-width: 468px) {
-        width: fit-content;
-        text-align: left;
-        
+
+    >* {
+        @media screen and (min-width: 468px) {
+            width: fit-content;
+            text-align: left;
+
+        }
+
+        text-align: center;
+        width: 100%;
     }
-    text-align: center;
-    width: 100%;
-}
-    ul{
+
+    ul {
         list-style: none;
         margin: 0;
         padding: 0;
     }
-    .footer-link{
+
+    .footer-link {
         text-decoration: none;
         display: inline-block;
         color: inherit;
 
     }
+
+    li {
+        list-style: none;
+    }
+
+    .footer-logo {
+        .footer-icons {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+
+    .logo-section .logo {
+        display: flex;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .footer-link.img {
+        display: block;
+        width: 140px;
+    }
+
 }

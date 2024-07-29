@@ -4,3 +4,198 @@
 @import 'gallery';
 @import 'article';
 @import 'card';
+@import 'footer';
+
+
+.hero-section {
+    position: static;
+    background: url("../images/technology-intricate-circuit-board-complex-green-blue-abstract-generated-by-ai\ 1.png") center;
+    background-size: cover;
+    height: 100vh;
+    max-height: 500px;
+
+    @media screen and (min-width: 768px) {
+        .navigation {
+            background-color: transparent;
+            color: white;
+        }
+
+        .nav-links {
+            color: white;
+        }
+    }
+
+    .hero-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+    }
+
+    .hero-header {
+        max-width: 30ch;
+        margin-inline: auto;
+
+        span {
+            font-size: clamp(24px, 2vw + 1rem, 42px);
+            display: block;
+        }
+    }
+
+    .hero-description {
+        text-align: center;
+        font-size: clamp(14px, 1vw + 1rem, 20px);
+
+    }
+}
+
+.icon-container {
+    aspect-ratio: 1;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #F7DCB9;
+    display: grid;
+    place-content: center;
+
+    img {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.flex-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-block: 3rem;
+    flex-wrap: wrap;
+
+    .img-container {
+        // flex: 1;
+        width: 100%;
+        aspect-ratio: 4/3;
+
+        img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    p {
+        font-size: clamp(14px, 1vw + .125rem, 16px);
+    }
+
+    .description {
+        width: 100%;
+        display: grid;
+        gap: 4px;
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        gap: 10rem;
+
+        .description,
+        .img-container {
+            flex: 1;
+        }
+
+        &:nth-child(n + 2) .description {
+            order: 2;
+        }
+    }
+
+
+    .text {
+        margin-top: 1em;
+    }
+}
+
+.hero-header.big {
+    font-size: clamp(24px, 5vw + 0.25rem, 36px);
+    font-weight: 500;
+}
+
+
+.blogpost-img {
+    height: 80vh;
+    max-height: 500px;
+}
+
+.blogpost-author {
+    margin-top: 2rem;
+}
+
+.blogpost-author,
+.comment {
+    display: flex;
+    gap: 12px;
+    width: min(600px, 100%);
+
+
+    .img-container {
+        height: 50px;
+        width: 50px;
+    }
+
+    img {
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .details {
+        flex: 8;
+        display: grid;
+        gap: 2px;
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        font-size: 14px;
+
+        .author {
+            font-size: 18px;
+        }
+    }
+
+    textarea {
+        flex: 1;
+        height: 100px;
+        resize: none;
+    }
+}
+
+hr {
+    margin-block: 4rem;
+}
+
+.blog {
+    margin-block: 2rem;
+}
+
+
+.animate {
+
+    animation: fade-in 1s ease-in-out forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section>* {
+    opacity: 0;
+    transform: translateY(50px);
+}

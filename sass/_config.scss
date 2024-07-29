@@ -1,7 +1,7 @@
 :root {
-    --bg-clr: #f1f1f1;
-    --font-clr: #4f4f4f;
-    --primary-clr: #3c4862;
+    --bg-clr: #F9F9F9F9;
+    --font-clr: #4C4B4B;
+    --primary-clr: #3C4862;
 
 
 }
@@ -14,8 +14,7 @@ $primary-clr: var(--primary-clr);
 *,
 *::before,
 *::after {
-    // margin: 0;
-    // padding: 0;
+
     box-sizing: border-box;
 }
 
@@ -26,6 +25,7 @@ body {
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: $bg-clr;
+    position: relative;
 }
 
 img {
@@ -34,6 +34,6 @@ img {
 }
 
 .container {
-    width: min(90%, 900px);
+    width: min(90%, 1200px);
     margin-inline: auto;
 }
