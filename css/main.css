@@ -164,11 +164,6 @@ img {
 .landing-page > section {
   margin-block: 2rem;
 }
-@media screen and (min-width: 768px) {
-  .landing-page > section {
-    margin-block: 8rem;
-  }
-}
 .landing-page > section > h2,
 .landing-page > section a:not(.card-card) {
   text-align: center;
@@ -249,6 +244,9 @@ section.about {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
+}
+.staff-container.staff {
+  margin-bottom: 4rem;
 }
 
 .staff-wrapper {
@@ -352,6 +350,37 @@ section.about {
   margin: 0;
   padding: 0;
 }
+.flex-section .description.contact {
+  display: grid;
+  gap: 1rem;
+}
+.flex-section .description.contact .form-group {
+  display: grid;
+}
+.flex-section .description.contact .form-group input,
+.flex-section .description.contact .form-group textarea {
+  padding: 1em;
+  border-radius: 4px;
+  outline: 0;
+  border: 0;
+  background-color: #f3f3f3;
+}
+.flex-section .description.contact .form-group textarea {
+  resize: none;
+  min-height: 100px;
+}
+.flex-section .description.contact .form-group label {
+  font-size: 1rem;
+  text-align: left;
+}
+.flex-section .description.contact .form-group-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.flex-section .description.contact .form-group-container * {
+  flex: 1;
+}
 @media screen and (min-width: 768px) {
   .flex-section {
     gap: 10rem;
@@ -370,7 +399,7 @@ section.about {
 
 .card--container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 3rem;
 }
 .card-img-wrapper {
@@ -422,6 +451,7 @@ section.about {
 
 footer {
   background-color: var(--primary-clr);
+  margin-top: 2rem;
 }
 
 footer > .wrapper {
@@ -439,9 +469,11 @@ footer > .wrapper > * {
 }
 @media screen and (min-width: 468px) {
   footer > .wrapper > * {
-    width: -moz-fit-content;
-    width: fit-content;
+    flex: 1;
     text-align: left;
+  }
+  footer > .wrapper > * .footer-link.img img {
+    margin-inline: auto;
   }
 }
 footer > .wrapper ul {
@@ -451,11 +483,16 @@ footer > .wrapper ul {
 }
 footer > .wrapper .footer-link {
   text-decoration: none;
-  display: inline-block;
+  margin: 0;
+  padding: 0;
   color: inherit;
 }
 footer > .wrapper li {
+  width: 100%;
   list-style: none;
+}
+footer > .wrapper .footer-logo {
+  width: 100%;
 }
 footer > .wrapper .footer-logo .footer-icons {
   margin-top: 10px;
@@ -474,6 +511,25 @@ footer > .wrapper .logo-section .logo {
 footer > .wrapper .footer-link.img {
   display: block;
   width: 140px;
+}
+footer > .wrapper .logo-section {
+  display: grid;
+  gap: 1rem;
+}
+@media screen and (max-width: 468px) {
+  footer > .wrapper .logo-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer > .wrapper .logo-section .footer-icons {
+    justify-content: center;
+  }
+  footer > .wrapper .logo-section .footer-link.img {
+    display: inline-block;
+    margin-inline: auto;
+  }
 }
 
 .hero-section {

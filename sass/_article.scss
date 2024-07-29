@@ -38,6 +38,46 @@
         }
     }
 
+    .description.contact {
+        display: grid;
+        gap: 1rem;
+
+        .form-group {
+            display: grid;
+            // display: flex;
+            // flex-direction: column;
+
+            input,
+            textarea {
+                padding: 1em;
+                border-radius: 4px;
+                outline: 0;
+                border: 0;
+                background-color: #f3f3f3;
+            }
+
+            textarea {
+                resize: none;
+                min-height: 100px;
+            }
+
+            label {
+                font-size: 1rem;
+                text-align: left;
+            }
+        }
+
+        .form-group-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+            * {
+                flex: 1;
+            }
+        }
+    }
+
     @media screen and (min-width: 768px) {
         gap: 10rem;
 
