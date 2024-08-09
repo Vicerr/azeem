@@ -6,6 +6,7 @@
 
 }
 
+
 $bg-clr: var(--bg-clr);
 $font-clr: var(--font-clr);
 
@@ -16,12 +17,14 @@ $primary-clr: var(--primary-clr);
 *::after {
 
     box-sizing: border-box;
+
 }
 
 body {
     line-height: 1.5;
     color: $font-clr;
     margin: 0;
+    scroll-behavior: smooth;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: $bg-clr;
