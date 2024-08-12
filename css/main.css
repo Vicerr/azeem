@@ -56,6 +56,10 @@ img {
   text-decoration: none;
   color: inherit;
 }
+.navigation .nav-links .link[aria-current=true] {
+  background-color: var(--primary-clr);
+  color: white;
+}
 
 @media screen and (max-width: 768px) {
   .navigation {
@@ -255,7 +259,7 @@ section.about {
 }
 
 .staff-img-container {
-  height: 220px;
+  height: 250px;
 }
 .staff-img-container img {
   height: 100%;
@@ -267,9 +271,6 @@ section.about {
 
 .staff-details {
   background-color: white;
-  position: absolute;
-  bottom: -40px;
-  width: 80%;
   padding: 1em;
   font-size: 14px;
   display: grid;

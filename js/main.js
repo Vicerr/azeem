@@ -16,3 +16,12 @@ const observer = new IntersectionObserver(
 document.querySelectorAll("section>*").forEach((element) => {
     observer.observe(element)
 })
+
+const links = document.querySelectorAll(".nav-links .link")
+links.forEach((link) => {
+    const linkAddress = link.getAttribute("href")
+    if (linkAddress !== "/index.html#contact" && linkAddress == window.location.pathname) {
+        link.removeAttribute("aria-current")
+        link.setAttribute("aria-current", "true")
+    }
+})
